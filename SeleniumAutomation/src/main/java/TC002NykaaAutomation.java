@@ -14,8 +14,8 @@ public class TC002NykaaAutomation{
 //		1) Open https://www.nykaa.com/
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		ChromeOptions coptions = new ChromeOptions();
-		coptions.addArguments("--disable notifications");
-		ChromeDriver driver = new ChromeDriver();
+		coptions.addArguments("--disable-notifications");
+		ChromeDriver driver = new ChromeDriver(coptions);
 		driver.get("https://www.nykaa.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
