@@ -74,11 +74,11 @@ public class TC007HondaAutomation {
 		driver.findElementByXPath("//a[@href='/FAQ']").click(); 
 		Thread.sleep(5000);
 		
-		// 10) Click Activa 125 BS-VI under Browse By Product
+		//Â 10) Click Activa 125 BS-VI under Browse By Product
 		driver.findElementByXPath("//h6[text()='Browse by Product']/following::a[contains(text(),'Activa 125')]").click();
 		Thread.sleep(5000);
 		
-		//11) Click  Vehicle Price 
+		//11) ClickÂ  Vehicle PriceÂ 
 		driver.findElementByXPath("//a[text()=' Vehicle Price']").click();
 		Thread.sleep(5000);
 		
@@ -91,7 +91,7 @@ public class TC007HondaAutomation {
 			driver.findElementByXPath("//td[text()='Activa 125 BS-VI']/following::td/a").click();
 		}
 		
-		//14)  Go to the new Window and select the state as Tamil Nadu and  city as Chennai
+		//14)Â  Go to the new Window and select the state as Tamil Nadu andÂ  city as Chennai
 		Set<String> windowHandles = driver.getWindowHandles();
 		List<String> list = new ArrayList<String>(windowHandles);
 		driver.switchTo().window(list.get(1));
@@ -133,7 +133,7 @@ public class TC007HondaAutomation {
 		}
 		
 		//17) Close the Browser
-//		driver.quit();
+		driver.quit();
 	}
 
 }
