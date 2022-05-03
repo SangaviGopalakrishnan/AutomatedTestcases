@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <test thread-count="6" parallel="tests" name="Test1(failed)" verbose="5">
+    <parameter name="url" value="https://courses.letskodeit.com/practice"/>
+    <classes>
+      <class name="testcases.Letskodit">
+        <methods>
+          <include name="makemytrip"/>
+          <include name="commonclass"/>
+          <include name="closingdriver"/>
+        </methods>
+      </class> <!-- testcases.Letskodit -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

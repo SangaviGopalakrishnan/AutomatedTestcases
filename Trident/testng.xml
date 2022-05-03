@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="6" name="Suite" verbose="5" parallel="tests">
+	<test thread-count="6" name="Test1">
+		<parameter name="url" value="https://courses.letskodeit.com/practice"></parameter>
+		<classes>
+			<class name="testcases.Letskodit" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="6" name="Test2">
+		<parameter name="url" value="https://www.makemytrip.com/"></parameter>
+		<classes>
+			<class name="testcases.Makemytrip" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
